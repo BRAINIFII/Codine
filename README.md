@@ -1,6 +1,6 @@
 # Codine
 
-![API Level](https://img.shields.io/badge/API-27%2B-blue.svg?style=flat) ![Version](https://img.shields.io/badge/Version-1.0.0-d11d53)
+![API Level](https://img.shields.io/badge/API-27%2B-blue.svg?style=flat) ![Version](https://img.shields.io/badge/Version-1.0.0-d11d53) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 ![Codine](https://github.com/BRAINIFII/Codine/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png?raw=true)
 
