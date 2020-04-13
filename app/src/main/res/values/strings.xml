@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Codine</string>
+
+    <string name="txt_command_title">Enter Command Title</string>
+    <string name="command_title">Command Title:</string>
+    <string name="lbl_command_desc">Command Description:</string>
+    <string name="command_desc">Enter Command Description</string>
+    <string name="lbl_command">Command:</string>
+    <string name="txtcommand">Enter Command</string>
+    <string name="card_run_button">Run</string>
+    <string name="card_edit_button">Edit</string>
+    <string name="start_hid">Start HID</string>
+    <string name="please_click_run_button_manually">Please Click RUN button manually</string>
+    <string name="card_button">Edit</string>
+    <string name="title_bar_desc">Hold a card to delete it.</string>
+</resources>

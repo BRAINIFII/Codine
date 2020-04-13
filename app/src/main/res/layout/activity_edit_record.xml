@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="16dp"
+    tools:context=".AddRecordActivity">
+
+
+    <TextView
+        android:id="@+id/lbltitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/command_title"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/edit_rec_commandtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbltitle"
+        android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
+        android:hint="@string/txt_command_title"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryWhite"
+        android:textColorHint="#5E5E5E" />
+    <TextView
+        android:id="@+id/edit_rec_lbltitledesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_rec_commandtitle"
+        android:padding="10dp"
+        android:text="@string/lbl_command_desc"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/edit_rec_commanddesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_rec_lbltitledesc"
+        android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
+        android:hint="@string/command_desc"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryWhite"
+        android:textColorHint="#5E5E5E" />
+
+    <TextView
+        android:id="@+id/lblcommand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_rec_commanddesc"
+        android:padding="10dp"
+        android:text="@string/lbl_command"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/edit_rec_command"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblcommand"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/txtcommand"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryWhite"
+        android:textColorHint="#5E5E5E" />
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="@string/card_button"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:textColor="@color/colorPrimaryWhite"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/edit_rec_command"/>
+
+</RelativeLayout>

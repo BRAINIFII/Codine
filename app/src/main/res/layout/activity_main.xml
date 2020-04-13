@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="7dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/apptitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Custom Commands"
+            android:textColor="@color/colorPrimaryWhite"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/apptitledesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/apptitle"
+            android:text="@string/title_bar_desc"
+            android:textColor="@color/TitleBarDescription"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <com.jediburrell.customfab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addFab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        app:fabType="custom"
+        app:fabIcon="@drawable/ic_add_black_24dp"
+        app:fabColor="@color/colorDefault"
+        app:fabShape="@drawable/fab"
+        />
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row"/>
+
+</RelativeLayout>
