@@ -7,8 +7,8 @@
 ### This is a Codine source code, a basic android app that can easily run commands using GUI by adding, editing, and removing commands.
 
 [<img src="https://i.ibb.co/q0mdc4Z/get-it-on-github.png"
-     alt="https://github.com/BRAINIFII/Codine/releases/download/1.0/Codine-v1.0.apk"
-     height="80">]()
+     alt="Codine-v1.0"
+     height="80">](https://github.com/BRAINIFII/Codine/releases/download/1.0/Codine-v1.0.apk)
 
 ## Requirements
 * ROOT Access
