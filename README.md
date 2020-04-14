@@ -16,5 +16,5 @@
 ## Features
 Codine is a simple and very basic app which can do the following things
 * Can run root commands without typing command in terminal.
-* Add a command and jaus click run to execute the command.
+* Add a command and just click run to execute the command.
 
