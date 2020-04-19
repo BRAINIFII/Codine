@@ -18,6 +18,10 @@ Codine is a simple and very basic app which can do the following things
 * Can run root commands without typing command in terminal.
 * Add a command and just click run to execute the command.
 
+## Report a bug or request a feature
+
+You can report a bug or request a feature by [opening an issue](https://github.com/brainifii/Codine/issues/new).
+
 ## Screenshot
 
 [<img src="https://i.ibb.co/sJHNktF/Screenshot.png"
