@@ -8,7 +8,7 @@
 
 [<img src="https://i.ibb.co/q0mdc4Z/get-it-on-github.png"
      alt="Codine-v1.10"
-     height="80">](https://github.com/BRAINIFII/Codine/releases/download/1.0/Codine-v1.0.apk)
+     height="80">](https://github.com/BRAINIFII/Codine/releases/download/v1.10/Codine-v1.10.apk)
 
 ## Requirements
 * ROOT Access
