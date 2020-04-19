@@ -15,9 +15,10 @@ public class Essentials {
 
     public boolean filecheck(){
         File sdCard = Environment.getExternalStorageDirectory();
+        File file = new File(sdCard.getAbsolutePath()+Constants.DB_BACKUP_PATH+Constants.DB_BACKUP_NAME);
         File dir = new File(sdCard.getAbsolutePath()+Constants.DB_BACKUP_PATH);
-        boolean exists = dir.exists();
-        return exists;
+//        if (dir.exists() && file.isFile())
+        return file.exists();
     }
 
 }

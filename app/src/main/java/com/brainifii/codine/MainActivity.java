@@ -59,9 +59,9 @@ private static final int REQUEST_CODE = 123;
 
         SharedPreferences pref = getSharedPreferences("prefs",MODE_PRIVATE);
         boolean firstStart = pref.getBoolean("firstStart", true);
-        if(firstStart){
-            bkpchk();
-        }
+//        if(firstStart){
+//            bkpchk();
+//        }
 
         mRecyclerView = findViewById(R.id.RecyclerView);
         databaseHelper = new DatabaseHelper(this);
@@ -221,35 +221,37 @@ private static final int REQUEST_CODE = 123;
         }
     }
 
-    private void bkpchk(){
-        if (checkpermission()) {
-            Essentials ess = new Essentials();
-            boolean op = ess.filecheck();
-            if (op) {
-                Toast.makeText(getApplicationContext(), "Backup Found.", Toast.LENGTH_SHORT).show();
-                AlertDialog.Builder alert = new AlertDialog.Builder(this, R.style.DialogTheme);
-                alert.setTitle("Backup found");
-                alert.setMessage("Do you want to restore previous Configs ?");
-                alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        restore();
-                    }
-                });
-                alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                });
-                alert.create().show();
-            }
-            SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
-            SharedPreferences.Editor editor = prefs.edit();
-            editor.putBoolean("firstStart", false);
-            editor.apply();
-        }
-    }
+//    private void bkpchk(){
+//        if (checkpermission()) {
+//            Essentials ess = new Essentials();
+//            boolean op = ess.filecheck();
+//            Toast.makeText(getApplicationContext(),"OP: "+op,Toast.LENGTH_LONG).show();
+//            if (op) {
+//                Toast.makeText(getApplicationContext(), "Backup Found.", Toast.LENGTH_SHORT).show();
+//                AlertDialog.Builder alert = new AlertDialog.Builder(this, R.style.DialogTheme);
+//                alert.setTitle("Backup found");
+//                alert.setMessage("Do you want to restore previous Configs ?");
+//                alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        restore();
+//                    }
+//                });
+//                alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//
+//                    }
+//                });
+//                alert.create().show();
+//            }
+//
+//            SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+//            SharedPreferences.Editor editor = prefs.edit();
+//            editor.putBoolean("firstStart", false);
+//            editor.apply();
+//        }
+//    }
 
     private void checkSU(){
         try {
