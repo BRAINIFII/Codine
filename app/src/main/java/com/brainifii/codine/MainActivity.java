@@ -54,6 +54,8 @@ private static final int REQUEST_CODE = 123;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        File directory = new File(Environment.getExternalStorageDirectory()+File.separator+"Codine_files");
+        directory.mkdirs();
         checkSU();
         grantpermission();
 
