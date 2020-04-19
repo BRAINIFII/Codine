@@ -2,7 +2,6 @@
     android:shape="rectangle">
 
     <corners
-        android:bottomLeftRadius="10dp"
         android:radius="40dp" />
 
     <gradient

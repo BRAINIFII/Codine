@@ -1,4 +1,4 @@
-package com.pocohuter.codine;
+package com.brainifii.codine;
 
 import org.junit.Test;
 

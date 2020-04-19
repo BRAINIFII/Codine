@@ -1,4 +1,4 @@
-package com.pocohuter.codine;
+package com.brainifii.codine;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.pocohuter.codine", appContext.getPackageName());
+        assertEquals("com.brainifii.codine", appContext.getPackageName());
     }
 }

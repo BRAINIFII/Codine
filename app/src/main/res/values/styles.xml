@@ -11,5 +11,6 @@
     <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:textColor">@color/colorPrimaryWhite</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
     </style>
 </resources>

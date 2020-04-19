@@ -3,11 +3,18 @@
     <words>
       <w>apptitle</w>
       <w>apptitledesc</w>
+      <w>bkpchk</w>
+      <w>brainifii</w>
+      <w>checkpermission</w>
+      <w>codine</w>
       <w>commd</w>
+      <w>fabbkp</w>
+      <w>grantpermission</w>
       <w>maincommand</w>
       <w>maincommanddesc</w>
       <w>maincommandtitle</w>
       <w>navadd</w>
+      <w>sust</w>
     </words>
   </dictionary>
 </component>

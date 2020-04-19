@@ -83,7 +83,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Holder> {
 
                 String command_output = essential.sudo(commd);
                 Log.wtf("Command",commd);
+                Log.wtf("Command Output",""+command_output);
                 Toast.makeText(context,"Command Output:  "+command_output,Toast.LENGTH_SHORT).show();
+                boolean sust = MainActivity.suStatus;
+                if (!sust & command_output==""){
+                    Toast.makeText(context,"Command require root.",Toast.LENGTH_SHORT).show();
+                }
 
             }
         });

@@ -11,12 +11,11 @@ public class Constants {
     // DEBUG MODE
     public static final Boolean DEBUG_MODE = false;
 
-    // sd path
-    public static final File sd = Environment.getExternalStorageDirectory();
-    File dir = new File(sd.getAbsolutePath()+"/Codine_Test");
 
     // db name
-    public static final String DB_NAME =  "CodineFragment";
+    public static final String DB_NAME =  "CodineFile";
+    public static final String DB_BACKUP_NAME =  "CodineBackup";
+    public static final String DB_BACKUP_PATH =  "/Codine_files";
 
     // db version
     public static final int DB_VERSION = 1;

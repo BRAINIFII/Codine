@@ -38,7 +38,7 @@
     <com.jediburrell.customfab.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/addFab"
+        android:id="@+id/mainFab"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_margin="16dp"
@@ -47,7 +47,78 @@
         app:fabColor="@color/colorDefault"
         app:fabShape="@drawable/fab"
         />
-    
+
+    <com.jediburrell.customfab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addFab"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/mainFab"
+        app:fabType="custom"
+        android:visibility="invisible"
+        app:fabIcon="@drawable/ic_add_black_24dp"
+        app:fabColor="@color/colorDefault"
+        app:fabShape="@drawable/fab"
+        />
+
+    <com.jediburrell.customfab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bkpFab"
+        android:layout_above="@+id/addFab"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        app:fabType="custom"
+        app:fabIcon="@drawable/ic_backup_black_24dp"
+        app:fabColor="@color/colorDefault"
+        app:fabShape="@drawable/fab"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/bkp_title"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginBottom="26dp"-->
+<!--        android:layout_toEndOf="@+id/bkp_fab_backup"-->
+<!--        android:background="@drawable/dialog"-->
+<!--        android:paddingStart="3dp"-->
+<!--        android:paddingTop="1dp"-->
+<!--        android:text="Backup"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/colorPrimaryWhite"/>-->
+
+    <com.jediburrell.customfab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bkp_fab_backup"
+        android:layout_margin="16dp"
+        app:fabType="custom"
+        app:fabIcon="@drawable/ic_backup"
+        app:fabColor="@color/colorDefault"
+        android:visibility="invisible"
+        app:fabShape="@drawable/fab"
+        android:layout_toEndOf="@+id/mainFab"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+    <com.jediburrell.customfab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bkp_fab_restore"
+        android:layout_above="@+id/mainFab"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        app:fabType="custom"
+        app:fabIcon="@drawable/ic_restore"
+        app:fabColor="@color/colorDefault"
+        app:fabShape="@drawable/fab"
+        />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/RecyclerView"
         android:layout_width="wrap_content"
@@ -55,5 +126,7 @@
         android:layout_below="@id/title_bar"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/row"/>
+
+
 
 </RelativeLayout>

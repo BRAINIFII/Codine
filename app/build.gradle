@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.pocohuter.codine"
+        applicationId "com.brainifii.codine"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
@@ -26,6 +26,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    implementation 'gun0912.ted:tedpermission:2.2.2'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.jaredrummler:android-shell:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
